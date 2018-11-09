@@ -81,12 +81,12 @@ for (var i = 0; i < tech.length; i++) {
     var selection = tech[i];
     var itemHTML = 
     `
-    <img class="card-img-top mx-auto" style="width: 100px;" src="${selection.logo}">
+    <img class="card-img-top mx-auto" style="width: auto; height: 75px;" src="${selection.logo}">
     <div class="card-body">
         <h3 class="card-title text-white bg-dark">&nbsp;${selection.name}</h3>
         <p class="card-text">Type: ${selection.type}</p>
         <p class="card-text">${selection.desc}</p>
-        <a href=${selection.link} class="btn btn-primary btn-block align-bottom" target="_blank">${selection.name}</a>
+        <a href=${selection.link} class="btn btn-primary btn-block" target="_blank">${selection.name}</a></div>
     `;
 
     card.innerHTML = itemHTML
